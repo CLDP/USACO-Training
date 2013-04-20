@@ -84,16 +84,16 @@ int main() {
     cout << ans.size() << endl;
     if (ans[ans.size() - 1] == n-1) {
         if (ans.size() > 1 && ans[ans.size() - 2] == n-2) {
-  	    for (int i = 0; i < ans.size() - 2; ++i) 
-		     cout << p[ans[i]].x << " " << p[ans[i]].y << " " 
-		          << p[ans[i]+1].x << " " << p[ans[i]+1].y << endl;
-		    cout << p[0].x << " " << p[0].y << " " << p[n-1].x << " " << p[n-1].y << endl;
-		    cout << p[n-2].x << " " << p[n-2].y << " " << p[n-1].x << " " << p[n-1].y << endl;
+            for (int i = 0; i < ans.size() - 2; ++i) 
+             cout << p[ans[i]].x << " " << p[ans[i]].y << " " 
+                  << p[ans[i]+1].x << " " << p[ans[i]+1].y << endl;
+            cout << p[0].x << " " << p[0].y << " " << p[n-1].x << " " << p[n-1].y << endl;
+            cout << p[n-2].x << " " << p[n-2].y << " " << p[n-1].x << " " << p[n-1].y << endl;
         } else { 
-		    for (int i = 0; i < ans.size() - 1; ++i) 
-		     cout << p[ans[i]].x << " " << p[ans[i]].y << " " 
-		          << p[ans[i]+1].x << " " << p[ans[i]+1].y << endl;
-		    cout << p[0].x << " " << p[0].y << " " << p[n-1].x << " " << p[n-1].y << endl;
+            for (int i = 0; i < ans.size() - 1; ++i) 
+             cout << p[ans[i]].x << " " << p[ans[i]].y << " " 
+                  << p[ans[i]+1].x << " " << p[ans[i]+1].y << endl;
+            cout << p[0].x << " " << p[0].y << " " << p[n-1].x << " " << p[n-1].y << endl;
         }
     } else {
         for (int i = 0; i < ans.size(); ++i) 
