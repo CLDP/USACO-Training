@@ -1,23 +1,13 @@
 /*
-
 ID: CHN
-
 PROG: race3
-
 LANG: C++
-
 */
-
 #include <iostream>
-
 #include <vector>
-
 #include <cstdio>
-
 #include <cstring>
-
 #include <algorithm>
-
 using namespace std;
 
 const int MAXN = 51;
@@ -25,12 +15,8 @@ const int MAXN = 51;
 bool x[MAXN][MAXN], f[MAXN][MAXN];
 
 
-
-
 int main() {
-
     freopen("race3.in", "r", stdin);
-
     freopen("race3.out", "w", stdout);
     int n = 0, a;
     
@@ -97,7 +83,5 @@ int main() {
     for (int i = 0; i < ans2.size(); ++i) cout << " " << ans2[i];
     cout << endl;
     
-
     return 0;
-
 }
